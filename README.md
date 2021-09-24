@@ -1,13 +1,16 @@
 # Yolo Object Detection on NVIDIA Jetson Nano 
 
-This repository provides a simple and easy process for camera installation, software and hardware setup, and object detection using Yolov5 and openCV on NVIDIA Jetson Nano.
-This project uses [**CSI-Camera**](https://github.com/JetsonHacksNano/CSI-Camera) to create pipeline and capture frames from the CSI camera, and [**Yolov5**](https://github.com/ultralytics/yolov5) to detect objects, implementing a complete and executable code on Jetson Development Kits.
-Check out [**CodePlay jetson nano youtube playlist**](https://www.youtube.com/watch?v=-A_CDLtQig4&list=PLZIi3Od9VUwW49q6T1VjShktoOgrDi3O4&index=3) and [**Medium article**](https://towardsdatascience.com/yolov5-object-detection-on-nvidia-jetson-nano-148cfa21a024) for more info. 
+## Prepare Supporting Software
+
+Install Pytorch & TorchVision with this link
+https://qengineering.eu/install-pytorch-on-jetson-nano.html
+
 
 ## Download Model
 Select the desired model based on model size, required speed, and accuracy.
 You can find available models [**here**](https://github.com/ultralytics/yolov5/releases) in the **Assets** section.
 Download the model using the command below and move it to the **weights** folder.
+
 ```
 $ cd weights
 $ wget https://github.com/ultralytics/yolov5/releases/download/v5.0/yolov5s.pt
